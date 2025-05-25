@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>EmailBloc Home</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/tailwind.output.css" />
+</head>
+
+<body style="background: #1F2029;">
+    <div id="main-container"
+        style="margin: 0 auto; padding: 10px; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 100%;">
+        <h1 class="text-3xl font-bold text-zinc-300 mb-6 text-center">EmailBloc Home</h1>
+        <p id="form-detected"></p>
+        <div id="security-results" style="width: 100%;"></div>
+        <button style="color: white;" id="expand-extension">Settings</button>
+        <div id="settings" style="display:none; color: white; margin-top: 16px;">
+          <label>
+            <input type="checkbox" id="multi-device-sync" />
+            Multi-device cloud sync
+          </label>
+        </div>
+    </div>
+    <script type="module" src="/src/home.js"></script>
+</body>
+
+</html>
+
+<!-- <html>
+<head>
+  <title>EmailBloc Login</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="stylesheet" href="/src/tailwind.output.css">
+</head>
+<body class="w-full max-w-lg bg-slate-800 rounded-2xl shadow-lg p-8 m-8">
+  <div class="w-full max-w-lg bg-slate-800 rounded-2xl shadow-lg p-8 m-8"
+    style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg'); background-position: bottom center; background-repeat: no-repeat; background-size: 300%;">
+    <h1 class="text-3xl font-bold text-zinc-300 mb-6 text-center">Sign In to EmailBloc</h1>
+    <form id="login-form" class="space-y-6">
+      <div>
+        <label class="block text-blue-100 mb-2" for="login-username">Username</label>
+        <input type="text" id="login-username"
+          class="w-full rounded-lg bg-[#1F2029] text-blue-100 placeholder-blue-300 border border-blue-700 focus:ring-2 focus:ring-blue-400 focus:outline-none p-3"
+          placeholder="Enter your username" required>
+      </div>
+      <div>
+        <label class="block text-blue-100 mb-2" for="login-email">Primary Email</label>
+        <input type="email" id="login-email"
+          class="w-full rounded-lg bg-blue-800 text-blue-100 placeholder-blue-300 border border-blue-700 focus:ring-2 focus:ring-blue-400 focus:outline-none p-3"
+          placeholder="Enter your primary email" required>
+      </div>
+      <button type="button" id="login-btn"
+        class="w-full bg-blue-700 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition">Sign In</button>
+      <button type="button" id="go-to-signup"
+        class="mx-auto block w-3/4 text-white text-sm py-1.5 rounded-lg transition mt-2">Don't have an account?</button>
+      <p id="login-message" class="text-red-400 mt-2"></p>
+    </form>
+  </div>
+  <script type="module" src="/src/login.js"></script>
+</body>
+</html> -->

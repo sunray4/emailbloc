@@ -1,0 +1,47 @@
+{
+  "name": "emailbloc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:css": "./tailwindcss -c ./src/tailwind.input.css -o ./src/tailwind.output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AccessRetrieved/emailbloc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AccessRetrieved/emailbloc/issues"
+  },
+  "homepage": "https://github.com/AccessRetrieved/emailbloc#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase": "^11.8.1",
+    "flowbite": "^3.1.2",
+    "htmlparser2": "^10.0.0",
+    "ipaddr.js": "^2.2.0",
+    "log4js": "^6.9.1",
+    "path": "^0.12.7",
+    "puppeteer": "^24.9.0",
+    "tldjs": "^2.3.1",
+    "tldts": "^7.0.7",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
+    "vite": "^6.3.5",
+    "vite-plugin-static-copy": "^3.0.0"
+  }
+}

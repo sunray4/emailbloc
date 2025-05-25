@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Example</title>
+</head>
+
+<body>
+  <h1>Enter Info</h1>
+  <form id="myForm">
+    <textarea id="url" rows="4" cols="50" placeholder="Type your text here..."></textarea>
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="response"></p>
+
+  <script type="module">
+    document
+      .getElementById("myForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const fetch_url = document.getElementById("url").value;
+        let responses = []
+        const urls = fetch_url.split(" ");
+
+        // for (const url of urls) {
+        //   fetch(`/check?fetch_url=${encodeURIComponent(url)}`)
+        //   .then((res) => res.text())
+        //   .then((score) => {
+        //     const s = parseInt(score);
+        //     document.getElementById("response").textContent += ` ${url} ${s}`;
+        //   });
+        // }
+        
+
+
+
+        fetch(`/check?fetch_url=${encodeURIComponent(fetch_url)}`)
+          .then((res) => res.json())  
+          .then(([objString, score]) => {
+          // const obj = JSON.parse(objString);
+          console.log("Parsed object:", objString);
+          console.log("Score:", score);
+          const o = JSON.stringify(objString, null, 2)
+          document.getElementById("response").textContent += ` obj: ${o}`;
+          }
+        );
+
+      });
+  </script>
+</body>
+
+</html>
