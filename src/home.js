@@ -205,18 +205,6 @@ function renderCSP(csp) {
         <th style="color: black;">CSP Implemented</th>
         <td>${csp.implemented ? "Yes" : "No"}</td>
       </tr>
-      <tr>
-        <th style="color: black;">Data</th>
-        <td>
-          ${
-            Array.isArray(csp.data) && csp.data.length > 0
-              ? `<ul style="padding-left:18px;">${csp.data
-                  .map((d) => `<li>${d}</li>`)
-                  .join("")}</ul>`
-              : "None"
-          }
-        </td>
-      </tr>
     </table>
   `;
 }
@@ -355,7 +343,7 @@ function setupPage() {
                   );
                 }
               } catch (err) {
-                console.error("Error removing fields from Firestore:", err);
+                console.error("Error removing fields from Fiarcrestore:", err);
               }
             });
           }
