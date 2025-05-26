@@ -1,3 +1,5 @@
+# EmailBloc (Privathon 2025)
+
 ## Inspiration 🧠
 Too often, users reuse the same email address across websites with varying levels of trustworthiness. One data breach can compromise everything. We wanted to give users control by assigning importance-based emails and analyzing a site's behaviour before they even register.
 
